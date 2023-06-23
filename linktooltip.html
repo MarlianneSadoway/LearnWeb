@@ -2,6 +2,42 @@
 <html lang="en-CA">
     <head>
         <title>Hyperlinks and Tooltips</title>
+        <!-- Style tag below has "." which defines attributes for a class. -->
+        <style>
+            .button:link, .button:visited {
+              background-color: #2a79f0;
+              color: white;
+              padding: 15px 25px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+            }
+            .button:hover, .button:active {
+              background-color: red;
+            }
+        </style>
+        <style>
+            .colored-link:link {
+              color: rgb(43, 72, 236);
+              background-color: transparent;
+              text-decoration: none;
+            }
+            .colored-link:visited {
+              color: rgb(6, 110, 3);
+              background-color: transparent;
+              text-decoration: none;
+            }
+            .colored-link:hover {
+              color: rgb(243, 10, 10);
+              background-color: transparent;
+              text-decoration: underline;
+            }
+            .colored-link:active {
+              color: rgb(233, 233, 8);
+              background-color: transparent;
+              text-decoration: underline;
+            }
+        </style>
     </head>
     <body>
         <a href="https://www.w3schools.com">This is a hyperlink to a website with tutorials on coding.</a>
@@ -18,5 +54,37 @@
         <hr>
         <p>Click this button to go to the w3schools website for their HTML Tutorial.</p>
         <button onclick="document.location='default.asp'">HTML Tutorial</button>
+        <br>
+        <br>
+        <a class="button" href="https://www.Google.com" target="_blank" title="Go to Google">This link will have a different color once visited.</a>
+        <br>
+        <br>
+        <a class="colored-link" href="https://www.Google.com" target="_blank" title="Go to Google">This link will have a different color once visited.</a>
+        <br>
+        <br>
+        <!-- Add link to bookmark. Breaks are added so that page will jump down to bookmark. -->
+        <a href="#C4">Jump to Chapter 7</a>
+        <br>
+        <br>
+        <p id="C1">Chapter 1</p>
+        <br>
+        <br>
+        <p id="C2">Chapter 2</p>
+        <br>
+        <br>
+        <p id="C3">Chapter 3</p>
+        <br>
+        <br>
+        <p id="C4">Chapter 4</p>
+        <br>
+        <br>
+        <p id="C5">Chapter 5</p>
+        <br>
+        <br>
+        <p id="C6">Chapter 6</p>
+        <br>
+        <br>
+        <!--Use id attribute to create a bookmark-->
+        <p id="C7">Chapter 7</p>
     </body>
 </html>
