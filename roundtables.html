@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 <html lang="en-CA">
     <head>
-        <title>Table Examples</title>
-        <!-- A white border gives the impression of an invisible border.-->
+        <title>Tables with Round Borders</title>
+        <!-- Borders can also be dotted, dashed, inset, outset, etc.
+        Padding can be specific to top, bottom, right, or left.-->
         <style>
-            table, th, td {
-                border:1px solid black; 
-                border-collapse: collapse;
+            th {
+                text-align: left;
+                padding: 10px;
             }
-            th, td {
-                background-color: aqua;
+            td {
+                border:1px solid black;
+                border-radius: 10px;
+                padding: 10px;
+            }
+            table {
+                border-spacing: 5px;
             }
         </style>
     </head>
     <body>
+
+        <h2>Horse Information</h2>
         <table style="width:100%;">
-            <caption>Horse Information</caption>
             <tr>
                 <th>Name</th>
                 <th>Breed</th>
@@ -46,15 +53,30 @@
             </tr>
         </table>
 
-        <h4>Example with a Header for Multiple Columns</h4>
+        <h2>Width and Height Examples</h2>
         <table>
             <tr>
-                <th colspan="2">Header</th>
-                <th>Header</th>
+                <th style="width:80%">Wide</th>
+                <th>Narrow</th>
             </tr>
             <tr>
+                <td>Normal and Wide</td>
+                <td>Normal and Narrow</td>
+            </tr>
+            <tr style="height:100px">
+                <td>High and Wide</td>
+                <td>High and Narrow</td>
+            </tr>
+        </table>
+
+        <h2>Example with Vertical Table Headers</h2>
+        <table>
+            <tr>
+                <th>Header</th>
                 <td>Data</td>
-                <td>Data</td>
+            </tr>
+            <tr>
+                <th>Header</th>
                 <td>Data</td>
             </tr>
         </table>
