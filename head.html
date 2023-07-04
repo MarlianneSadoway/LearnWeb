@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+    <head>
+        <title>html head Elements</title>
+        <style>
+            p {color:rgb(48, 47, 47)}
+        </style>
+        <meta name="keywords" content="HTML, meta, head, viewport, script">
+        <meta name="author" content="Marlianne">
+        <meta name="description" content="Different things you can do with the html head element.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Viewport above should be included in all web pages so that the width of the page matches the device. -->
+        <script>
+            function change() {
+                document.getElementById("target").innerHTML = "Now it is different!";
+            }
+        </script>
+    </head>
+    <body>
+        <p>A base element can be put into the header so that any relative addresses used will be relative to the base.</p>
+        <button type="button" onclick="change()">Click here to change the text below.</button>
+        <p id="target">Here is some text.</p>
+    </body>
+</html>
