@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+    <head>
+        <title>Responsive Web Design Examples</title>
+        <!--viewport makes the page responsive-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--charset is default but include because it is not guaranteed (this translates machine code into text) -->
+        <meta charset="utf-8">
+        <style>
+            .left, .right, .center {
+                float:left;
+                padding:20px;
+            }
+            @media screen and (max-width:800px) {
+                .left, .right, .main {
+                    width:100%; /*width is 100% when viewport is 800px or smaller*/
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <p>The image below will scale with the page, but will not scale bigger than the original size of the image. </p>
+        <img src="flower.jpg" style="max-width:100%; height:auto;">
+        <h1 style="font-size: 10vw;">A Responsive Header</h1>
+        <p style="font-size: 5vw;">A responsive paragraph. Changing the size of the window will change the text size of this paragraph and the header above.</p>
+        <h3>Media Queries</h3>
+        <p>The 3 sections below will either stack horizontally or vertically depending on the window size.</p>
+        <div class="left">Left</div>
+        <div class="center">Center</div>
+        <div class="right">Right</div>
+    </body>
+</html>
