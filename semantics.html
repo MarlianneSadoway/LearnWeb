@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+
+    <head>
+        <title>Semantic Elements</title>
+        <!--viewport makes the page responsive-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--
+            charset is default but include because it is not guaranteed 
+            (this translates machine code into text) 
+        -->
+        <meta charset="utf-8">
+        <style>
+            aside {
+                width:30%;
+                padding: 5px;
+                float: right;
+                background-color: lightgray;
+            }
+            nav {
+                background-color: lightblue;
+                padding: 10px;
+                text-align: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1>Semantic Elements</h1>
+        </header>
+        <nav>
+            <a href="responsive.html">Responsive Page Example</a>
+            <a href="class.html">Class Example</a>
+        </nav>
+        <section>
+            <h3>section Element</h3>
+            <p>The section element can be used for any section of the page.</p>
+        </section>
+        <aside>The aside element is a blurb off to the side and is indirectly relevant.</aside>
+        <article>
+            <p>Articles can be used for forum or blog posts.</p>
+        </article>
+        <article>
+            <p>Articles can also be used for comments or news articles.</p>
+        </article>
+        <!--article and section elements can contain each other.-->
+        <figure>
+            <img src="mntntrail.jpg" alt="Mountain Trail" style="width: 30%;height: 30%;">
+            <figcaption>Figure 1. A trail in the mountains.</figcaption>
+        </figure>
+        <footer>
+            <p>Author: Marlianne Sadoway</p>
+            <p>Information to create this page was gathered from W3 Schools</p>
+            <p>Picture taken by Marlianne Sadoway</p>
+        </footer>
+    </body>
+
+</html>
