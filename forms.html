@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+    <head>
+        <title>Forms</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h2>Different Types of Forms</h2>
+        <!--In order to submit, each input field must have a name attribute.-->
+        <hr>
+
+        <p>Fill out the text field below:</p>
+        <form>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+        <hr>
+
+        <p>Radio buttons only allow the selection of one of the choices.</p>
+        <p>Choose your favorite horse color:</p>
+        <form>
+            <input type="radio" id="grey" name="favhorsecolor" value="Grey">
+            <label for="grey">Grey</label><br>
+            <input type="radio" id="bay" name="favhorsecolor" value="Bay">
+            <label for="bay">Bay</label><br><br>
+            <input type="submit" value="Submit">
+        </form>
+        <hr>
+
+        <p>Check boxes allow multiple choices to be selected.</p>
+        <p>Select all that apply:</p>
+        <form>
+            <input type="checkbox" id="fruit1" name="fruit1" value="apples">
+            <label for="fruit1">I like apples</label><br>
+            <input type="checkbox" id="fruit2" name="fruit2" value="oranges">
+            <label for="fruit2">I like oranges</label><br><br>
+            <input type="submit" value="Submit">
+        </form>
+        <hr>
+
+        <P>Clickable button:</P>
+        <form>
+            <input type="button" value="Add to favorites">
+        </form>
+
+        <!--
+            For below, <form action=" " target=" " autocomplete="on"></form>
+            Form data is sent to the file fname.php if action="fname.php"
+            target="_blank" to make response displayed in new window or tab
+        -->
+    </body>
+</html>
