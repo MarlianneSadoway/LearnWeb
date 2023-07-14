@@ -40,9 +40,11 @@
         </form>
         <hr>
 
-        <p>Clickable button:</p>
+        <p>Clickable buttons:</p>
         <form>
             <input type="button" value="Add to favorites">
+            <p>or</p>
+            <button type="button">Click me!</button>
         </form>
         <hr>
 
@@ -70,12 +72,32 @@
 
         <p>The form below allows multiple selections.</p>
         <form>
-            <label for="meat">Choose a meat:</label>
+            <label for="meat">Choose one or more of the following:</label>
             <select id="meat" name="meat" size="3" multiple>
                 <option value="steak">Steak</option>
                 <option value="pork">Pork</option>
                 <option value="chicken">Chicken</option>
             </select>
+            <input type="submit" value="Submit">
+        </form>
+        <hr>
+
+        <p>The box below is an area where you can enter multiple lines of text.</p>
+        <form>
+            <textarea name="message" rows="10" cols="20"></textarea>
+            <br><br>
+            <input type="submit" value="Submit Message">
+        </form>
+        <hr>
+
+        <p>The box below has pre-defined options:</p>
+        <form>
+            <input list="flowers" name="flower">
+            <datalist id="flowers">
+                <option value="Lily"></option>
+                <option value="Tulip"></option>
+                <option value="Rose"></option>
+            </datalist>
             <input type="submit" value="Submit">
         </form>
 
