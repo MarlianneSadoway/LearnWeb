@@ -11,9 +11,11 @@
         <hr>
 
         <p>Fill out the text field below:</p>
-        <form>
+        <form autocomplete="on">
             <label for="fname">First name:</label>
-            <input type="text" id="fname" name="fname"><br><br>
+            <input type="text" id="fname" name="fname" autofocus><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname" ><br><br>
             <input type="submit" value="Submit">
         </form>
         <hr>
@@ -100,11 +102,75 @@
             </datalist>
             <input type="submit" value="Submit">
         </form>
+        <hr>
+
+        <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+            <input type="range" id="a" name="a" value="50">
+            <!--Default for range is 0 to 100-->
+            +
+            <input type="number" id="b" name="b" value="50">
+            =
+            <output name="x" for="a b"></output>
+        </form>
+        <hr>
+
+        <p>Password will be hidden in the below form.</p>
+        <form>
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username"><br>
+            <label for="pwd">Password:</label><br>
+            <input type="password" id="pwd" name="pwd"><br><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+        <hr>
+
+        <form>
+            <label for="favcolor">Pick a color:</label>
+            <input type="color" id="favcolor" name="favcolor">
+        </form>
+        <hr>
+
+        <form>
+            <!--date can be restricted with id="datemin" and "datemax"-->
+            <label for="bday">Birthday:</label>
+            <input type="date" id="bday" name="bday">
+            <br>
+            <label for="datetime">Date and Time:</label>
+            <input type="datetime-local" id="datetime" name="datetime">
+        </form>
+        <hr>
+
+        <form>
+            <label for="email">Enter your email address:</label>
+            <input type="email" id="email" name="email">
+        </form>
+        <hr>
+
+        <form>
+            <label for="chosenfile">Choose a file:</label>
+            <input type="file" id="chosenfile" name="chosenfile">
+        </form>
 
         <!--
-            For below, <form action=" " target=" " autocomplete="on"></form>
+            <form action=" " target=" " autocomplete="on"></form>
             Form data is sent to the file fname.php if action="fname.php"
             target="_blank" to make response displayed in new window or tab
+            
+            <input type="image" src=" "> for a image as a submit button
+
+            Other input types (<input type=""):
+            maxlength specifies max num of chars for input field (security)
+            required specifies field must be filled out 
+            search is used for a search field
+            tel is used for a telephone number 
+            url for a url address
+            week, time, month, etc 
+
+            value specifies what the input field will contain initially
+            size is the visible width of the input field, default is 20 
+            multiple works for email and file so that user can input more than 1 value
+            placeholder gives a short hint of the expected value until user fills out the field 
         -->
     </body>
 </html>
