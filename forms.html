@@ -151,12 +151,32 @@
             <label for="chosenfile">Choose a file:</label>
             <input type="file" id="chosenfile" name="chosenfile">
         </form>
+        <hr>
+
+        <form id="name">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname" autofocus><br>
+            <input type="submit" value="Submit">
+        </form>
+        <!--The below last name will be submitted with the above form-->
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" form="name"><br><br>
+        <hr>
+
+        <!--formaction attribute overrides the action attribute if pressed-->
+        <form action="/submission.php">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname" autofocus><br><br>
+            <input type="submit" value="Submit">
+            <input type="submit" formaction="/admin_submit.php" value="Submit as admin">
+        </form>
 
         <!--
             <form action=" " target=" " autocomplete="on"></form>
             Form data is sent to the file fname.php if action="fname.php"
             target="_blank" to make response displayed in new window or tab
-            
+            formtarget="_blank" overrides the target attribute
+
             <input type="image" src=" "> for a image as a submit button
 
             Other input types (<input type=""):
@@ -171,6 +191,9 @@
             size is the visible width of the input field, default is 20 
             multiple works for email and file so that user can input more than 1 value
             placeholder gives a short hint of the expected value until user fills out the field 
+        
+            never use method="get" with sensitive info
+            method="post" is more secure
         -->
     </body>
 </html>
