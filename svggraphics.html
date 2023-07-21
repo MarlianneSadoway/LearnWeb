@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+    <head>
+        <title>SVG Graphics</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <svg height="230" width="600">
+            <defs>
+                <linearGradient id="gradient1" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" style="stop-color: rgb(250, 9, 250); stop-opacity: 1;" />
+                    <stop offset="100%" style="stop-color: rgb(23, 26, 252); stop-opacity: 1;" />                
+                </linearGradient> 
+            </defs>
+            <ellipse cx="120" cy="90" rx="80" ry="50" fill="url(#gradient1)" />
+            <text fill="#ffffff" font-size="35" x="65" y="100">LOGO</text>
+            Browser does not support SVG.
+        </svg>
+        <!--SVG is not suited for games. SVG is suited for maps.-->
+    </body>
+</html>
